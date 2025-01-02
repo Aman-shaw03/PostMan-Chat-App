@@ -119,7 +119,7 @@ export const checkAuth = (req, res) => {
     } catch (error) {
         console.log("Error in checkAuth controller", error.message);
         res.status(500).json({
-            message: "Internal Server Error from checkAuth",
+            message: "Internal Server Error from checkAuth Backend",
         });
     }
 };
