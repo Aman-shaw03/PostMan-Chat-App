@@ -54,7 +54,6 @@ export const sendMessage = async (req, res) => {
         });
         await newMessage.save();
 
-
         // now we will emit a "Message" to that specific receiverSocketId
         const receiverSocketId = getReceiverSocketId(receiverId)
         if(receiverSocketId){
